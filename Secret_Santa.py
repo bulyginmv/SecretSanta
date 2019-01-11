@@ -22,6 +22,6 @@ rfamilies=shufflelist(families)
 nl='\n'
 random.shuffle(genres)
 for a,b,c in zip(families,rfamilies,genres):
-    text=open(f'C:/new_year/{a.rstrip(nl)}.txt','w',encoding='utf-8')
+    text=open(f'{a.rstrip(nl)}.txt','w',encoding='utf-8')
     text.write(f'Привет! Вы дарите подарок этой семье: {b.rstrip(nl)} ! {nl}Для сценки вам выпал жанр: {c.rstrip(nl)} !')
     text.close()
